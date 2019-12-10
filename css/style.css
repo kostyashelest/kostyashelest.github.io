@@ -1,0 +1,17 @@
+.row.hidden{
+    display: none;
+}
+
+input{
+    font-size:14px;
+    margin-bottom:15px;
+    width: 290px;
+}
+
+#git{
+    display: inline;
+    position: absolute;
+    margin-top: 12px;
+    height: 55px;
+    margin-left: 15px;
+}

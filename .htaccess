@@ -1,0 +1,19 @@
+RewriteEngine On
+
+#  *** редирект с www ***
+ RewriteCond %{HTTP_HOST} ^www.(.*)$ [NC]
+ RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# *** склейка дублей ***
+ RewriteCond %{REQUEST_METHOD} =GET
+ RewriteCond %{REQUEST_URI} ^(.*)/index.php$
+ RewriteRule ^(.*)$ %1/ [R=301,L]
+
+ RewriteCond %{REQUEST_URI} ^(.*)/index.htm$
+ RewriteRule ^(.*)$ %1/ [R=301,L]
+
+ RewriteCond %{REQUEST_URI} ^(.*)/index.html$
+ RewriteRule ^(.*)$ %1/ [R=301,L]
+
+ RewriteCond %{THE_REQUEST} ([^\s]*)\/{2,}(\?[^\s]*)?
+ RewriteRule (.*) / [R=301,L]

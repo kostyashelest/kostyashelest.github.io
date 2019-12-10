@@ -1,0 +1,260 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Список команд ssh</title>
+    <meta name="description" content="Мой список частоиспользуемых команд SSH">
+    <meta name="yandex-verification" content="93644fb967c7e558" />
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(52856746, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/52856746" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<div class="caption">
+    Поиск по команде или описанию
+    <input id='filter-input' type='text' placeholder="название команды или описание">
+
+    <div id="git">
+        <a href="https://github.com/kostyashelest/terminal.r2-d2.site" target="_blank">
+            <img src="fork_me_on_github.png" width="80px">
+        </a>
+    </div>
+</div>
+<div id="container">
+    <div id="table">
+        <div class="header-row row" style="display: table-row !important;">
+            <span class="cell primary">Команда</span>
+            <span class="cell">Описание</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>find /var/www/ -type f -exec chmod 0644 {} \;</p></span>
+            <span class="cell" data-label="Exterior">замена прав на файлы</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>find /var/www/ -type d -exec chmod 0755 {} \;</p></span>
+            <span class="cell" data-label="Exterior">замена прав на папки</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>find . -name "*.html-r" -type f</p></span>
+            <span class="cell" data-label="Exterior">поиск рекурсивно по расширению файла и вывод найденных результатов</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>find . -name "*.html-r" -type f -delete</p></span>
+            <span class="cell" data-label="Exterior">поиск и удаление рекурсивно по расширению файла</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>find . -type f -name '*.php2' -exec sed -i -r 's/что_нужно_заменить/на_что_нужно_заменить/g' {} \;</p></span>
+            <span class="cell" data-label="Exterior">поиск и замена рекурсивно внутри файлов</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>scp -P4141 /Users/kosmos/u0364535_testlin.sql kosmos@194.58.103.125:/home/kosmos</p></span>
+            <span class="cell" data-label="Exterior">копирование файлов с пк на сервер</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>cp /home/что_копируем/ /home/куда_копируем/</p></span>
+            <span class="cell" data-label="Exterior">копирование файлов на сервере</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mv /имя_папки_1/файл_1 /имя_папки_2/</p></span>
+            <span class="cell" data-label="Exterior">перемещение файлов внутри сервера</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mv /имя_папки_1/файл_1 /имя_папки_2/файл_2</p></span>
+            <span class="cell" data-label="Exterior">перемещение и переименовывание файла внутри сервера</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mv /имя_папки_1/файл_1 /имя_папки_1/файл_2</p></span>
+            <span class="cell" data-label="Exterior">просто переименовать файл</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>iconv -f CP1251 -t UTF-8 1.txt > 2.txt</p></span>
+            <span class="cell" data-label="Exterior">смена кодировки файла</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>sudo sysctl -w net.inet.ip.ttl=65</p></span>
+            <span class="cell" data-label="Exterior">для обхода блокировки на раздачу интернета с мобильного</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>zip -r имя_архива архивируемая_папка</p></span>
+            <span class="cell" data-label="Exterior">создание архива</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>du -sh *</p></span>
+            <span class="cell" data-label="Exterior">вывод списка папок и файлов с указанием их размера</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>php app/console server:run</p></span>
+            <span class="cell" data-label="Exterior">для запуска проекта symfony</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>sed 's/ /%20/g' key.txt</p></span>
+            <span class="cell" data-label="Exterior">замена пробела на символы %20 для каждой строки (g) в конкретном файле</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>awk '{print "text"$0}' key.txt</p></span>
+            <span class="cell" data-label="Exterior">добавление текста в начало каждой строки</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>awk '{print $0"text"}' file.txt</p></span>
+            <span class="cell" data-label="Exterior">добавление текста в конец строки</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>tr ' ' '\n' < FILEname</p></span>
+            <span class="cell" data-label="Exterior">меняем пробел на перенос строки</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>#!/bin/bash</p></span>
+            <span class="cell" data-label="Exterior">создание bash скрипта name.sh. текст для первой строки. затем идет скрипт</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>chmod +x name.sh</p></span>
+            <span class="cell" data-label="Exterior">преобразовываем файл в исполняемый bash скрипт</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>nohup ./name.sh &</p></span>
+            <span class="cell" data-label="Exterior">запуск bash скрипта в фоне</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>history -cw</p></span>
+            <span class="cell" data-label="Exterior">очистить историю ssh</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>pwd</p></span>
+            <span class="cell" data-label="Exterior">полный путь к текущей директории</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mysql -uroot -p</p></span>
+            <span class="cell" data-label="Exterior">подключаемся к базе данных</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mysql.server start</p></span>
+            <span class="cell" data-label="Exterior">запуск mysql на MAC</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mysqldump -uroot -p названиеБазы > названиеФайла.sql</p></span>
+            <span class="cell" data-label="Exterior">бэкап базы данных</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>mysql ИМЯ_БАЗЫ -uИМЯ_ПОЛЬЗОВАТЕЛЯ -pПАРОЛЬ < dump.sql</p></span>
+            <span class="cell" data-label="Exterior">залить базу на сервер mysql</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>create database db_name;</p></span>
+            <span class="cell" data-label="Exterior">создание базы данных</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>CREATE USER 'userName'@'localhost' IDENTIFIED BY 'password';</p></span>
+            <span class="cell" data-label="Exterior">создание пользователя бд</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>GRANT ALL PRIVILEGES ON имя_базы.* TO имя_пользователя@localhost IDENTIFIED BY 'пароль_пользователя';</p></span>
+            <span class="cell" data-label="Exterior">назначение прав на конкретную бд конкретному пользователю</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>ssh -p 4110  userName@193.124.000.000</p></span>
+            <span class="cell" data-label="Exterior">подключение к серверу</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>wget -r -k -l 20 -p -E -nc --restrict-file-names=nocontrol http://site.ru</p></span>
+            <span class="cell" data-label="Exterior">wget для сайтов с кирилическими адресами страниц</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>wget -r -k -l 7 -p -nc -erobots=off --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:21.0) Gecko/20100101 Firefox/21.0" site.ru</p></span>
+            <span class="cell" data-label="Exterior">кормилица)</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>wget --header "Cookie: beget=begetok"</p></span>
+            <span class="cell" data-label="Exterior">cookies wget</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>sudo chown omlook:www-data -R site.ru/</p></span>
+            <span class="cell" data-label="Exterior">смена владельца</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>touch fileName.txt</p></span>
+            <span class="cell" data-label="Exterior">создание файла</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>dd if=/dev/zero of=fileName.txt  bs=10m  count=1</p></span>
+            <span class="cell" data-label="Exterior">создание файла определенного размера</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>dig site.ru txt</p></span>
+            <span class="cell" data-label="Exterior">проверка записей txt домена</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>dig site.ru mx</p></span>
+            <span class="cell" data-label="Exterior">проверка записей mx домена</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>apachectl configtest</p></span>
+            <span class="cell" data-label="Exterior">тестирование конфигурации apache</span>
+        </div>
+        <div class="row">
+            <input type="radio" name="expand">
+            <span class="cell primary" data-label="Vehicle"><p>wget --limit-rate=100k</p></span>
+            <span class="cell" data-label="Exterior">ограничение скорости загрузки wget</span>
+        </div>
+    </div>
+</div>
+
+<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>

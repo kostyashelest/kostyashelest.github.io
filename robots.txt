@@ -1,0 +1,1 @@
+User-agent: YandexBot,GooglebotCrawl-delay: 1Host: kostyashelest.github.ioSitemap: https://kostyashelest.github.io/sitemap.xml
