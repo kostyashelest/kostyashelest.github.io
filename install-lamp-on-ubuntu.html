@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Установка и настройка LAMP в Ubuntu</title>
+  <style>
+    i{
+      padding-left: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Установка и настройка LAMP в Ubutnu</h2>
+
+  <ul>
+    <li>1. Обновление системы:</li>
+      <i>sudo apt update</i><br>
+      <i>sudo apt upgrade</i>
+
+    <li>2. Установка Apache2</li>
+      <i>sudo apt install apache2</i>
+
+    <li>3. Установка MySQL</li>
+      <i>sudo apt install mysql-server</i>
+
+    <li>4. Устанавливаем PHP</li>
+      <i>sudo apt install php7.4 libapache2-mod-php7.4 php-mysql</i>
+
+    <li>5. Ставим расширения для PHP</li>
+      <i>sudo apt install php-curl php-json php-cgi php-gd php-zip php-mbstring php-xml php-xmlrpc</i>
+
+    <li>Примечание:</li>
+      <i>После смены директории с сайтами возникает ошибка 403. Необходимо сменить корневую директорию в файле: sudo nano /etc/apache2/apache2.conf А также, в конфиге хоста.</i>
+  </ul>
+
+</body>
+
+</html>
